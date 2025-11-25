@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Assalamualaikumm fineshytt</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg-1: #fff7f9;
+      --accent-1: #d6336c;
+      --accent-2: #ff7aa2;
+      --paper: rgba(255,255,255,0.7);
+      --glass-shadow: 0 10px 40px rgba(214,51,108,0.12);
+    }
+    html,body{
+      margin:0;
+      padding:0;
+      font-family: "Merriweather", Georgia, serif;
+      background: linear-gradient(180deg,#fff6fb,#fff0f7);
+      color:#402032;
+      overflow-y:auto;
+    }
+    .heart{
+      position:fixed;
+      top:-20px;
+      color:#ff8fb3;
+      font-size:18px;
+      opacity:0.85;
+      animation: fall linear infinite;
+      user-select:none;
+      pointer-events:none;
+    }
+    @keyframes fall{
+      0% { transform: translateY(-20px) rotate(0deg); }
+      100% { transform: translateY(110vh) rotate(40deg); }
+    }
+    .wrap{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:3rem;
+      box-sizing:border-box;
+      position:relative;
+      z-index:10;
+    }
+    .letter {
+      width:min(820px, 94%);
+      background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,250,251,0.88));
+      border-radius:18px;
+      padding:48px 44px;
+      box-shadow: var(--glass-shadow);
+      position:relative;
+      border:1px solid rgba(230,190,210,0.35);
+      backdrop-filter: blur(6px) saturate(1.05);
+      animation: pop 900ms cubic-bezier(.2,.9,.2,1);
+    }
+    @keyframes pop{
+      0%{ transform: translateY(18px) scale(.995); opacity:0; }
+      100%{ transform: translateY(0) scale(1); opacity:1; }
+    }
+    .title {
+      font-family: "Dancing Script", cursive;
+      font-size:38px;
+      color:var(--accent-1);
+      margin:0;
+      text-align:center;
+    }
+    .subtitle{
+      margin-top:6px;
+      font-size:13px;
+      color:#7a2a45;
+      opacity:0.9;
+      text-align:center;
+    }
+    .body {
+      margin-top:20px;
+      line-height:1.8;
+      font-size:17px;
+      white-space:pre-line;
+      color:#412733;
+    }
+    .signature{
+      margin-top:28px;
+      display:flex;
+      justify-content:flex-end;
+      gap:8px;
+      align-items:center;
+    }
+    .name{
+      font-family: "Dancing Script", cursive;
+      font-size:24px;
+      color:var(--accent-2);
+    }
+    .meta{
+      color:#7a2a45;
+      font-size:13px;
+      opacity:0.9;
+    }
+    .accent-heart{
+      width:16px;
+      height:16px;
+      background:var(--accent-2);
+      transform:rotate(45deg);
+      border-radius:3px;
+    }
+    .footer-note{
+      margin-top:20px;
+      text-align:center;
+      font-size:12px;
+      color:#7a2a45;
+      opacity:0.75;
+    }
+  </style>
+</head>
+<body>
+  <audio id="bgm" loop>
+    <source src="https://cdn.pixabay.com/audio/2023/02/28/audio_6cb4fa6b77.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    document.addEventListener("click", () => {
+      const audio = document.getElementById("bgm");
+      audio.volume = 0.5;
+      audio.play().catch(()=>{});
+    }, { once:true });
+
+    function createHeart(){
+      const heart = document.createElement("div");
+      heart.classList.add("heart");
+      heart.innerHTML = "❤";
+      heart.style.left = Math.random()*100 + "vw";
+      heart.style.animationDuration = (3 + Math.random() * 4) + "s";
+      heart.style.fontSize = (16 + Math.random()*12) + "px";
+      document.body.appendChild(heart);
+      setTimeout(() => heart.remove(), 7000);
+    }
+
+    setInterval(createHeart, 250);
+  </script>
+
+  <div class="wrap">
+    <article class="letter">
+
+      <h1 class="title">Untuk Deaa, yang selalu di hati</h1>
+      <div class="subtitle">Sebuah surat kecil, dari aku yang selalu memilih pulang padamu</div>
+
+      <div class="body">
+Kita mungkin sedang ada di fase di mana hari-hari terasa lebih sepi dari biasanya. Kita tidak selalu bersama setiap waktu, dan kadang kita melewati banyak momen masing-masing. Tapi ada satu hal yang tetap dan tidak pernah hilang: ketika salah satu dari kita butuh sandaran, kita selalu muncul untuk satu sama lain.
+
+Mungkin hubungan kita tidak penuh dengan kata-kata setiap hari, tapi hubungan kita penuh dengan rasa yang tidak perlu dijelaskan — rasa yang membuatku selalu kembali ke kamu.
+
+Maaf kalau aku masih sering salah, masih belum bisa jadi sosok terbaik yang kamu harapkan. Tapi percayalah, aku selalu berusaha. Karena mencintaimu itu bukan tugas, tapi keinginan. Bukan beban, tapi rumah.
+
+Aku ingin kamu tahu… meskipun kita kadang menjalani hari dengan tempo masing-masing, kamu tetap menjadi seseorang yang sangat berarti. Seseorang yang selalu aku jaga, aku pikirkan, dan aku sayangi lebih dari apa yang bisa aku ucapkan.
+
+Selama kamu masih ingin aku ada, aku akan selalu ada. Tidak peduli sejauh apa langkah kita masing-masing, hatiku selalu menemukan jalan untuk kembali ke kamu.
+
+Dari aku, yang selalu memilih kamu — dalam tenang, dalam rindu, dalam diam, dan dalam setiap waktu.
+      </div>
+
+      <div class="signature">
+        <div class="meta">Dengan cinta,</div>
+        <div class="name">Reann</div>
+        <span class="accent-heart"></span>
+      </div>
+
+      <div class="footer-note">dari reann… untuk deaa, tempat pulang hatiku</div>
+
+    </article>
+  </div>
+
+</body>
+</html>
